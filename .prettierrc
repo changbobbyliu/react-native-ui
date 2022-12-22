@@ -1,7 +1,5 @@
 {
-    "quoteProps": "consistent",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "es5",
-    "useTabs": false
+  "tabWidth": 2,
+  "printWidth": 100,
+  "useTabs": true
 }
