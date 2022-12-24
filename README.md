@@ -11,7 +11,7 @@ npm install @boobareth/react-native-ui
 ## Usage
 
 ```js
-import { multiply } from '@boobareth/react-native-ui';
+import { multiply } from "@boobareth/react-native-ui";
 
 // ...
 
