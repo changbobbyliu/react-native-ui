@@ -1,7 +1,8 @@
 import React from "react";
 import { Counter } from "@boobareth/react-native-ui";
+import type { ComponentMeta } from "@storybook/react-native";
 
-export default {
+const config: ComponentMeta<typeof Counter> = {
 	title: "Counter",
 	component: Counter,
 	args: {
@@ -10,3 +11,5 @@ export default {
 };
 
 export const Basic = (args: any) => <Counter {...args} title="BABA" initialCount={20} />;
+
+export default config;
