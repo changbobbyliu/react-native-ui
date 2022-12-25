@@ -7,8 +7,6 @@
 		"android": "expo start --android",
 		"ios": "expo start --ios",
 		"web": "expo start --web",
-		"sb:build": "sb-rn-get-stories",
-		"sb:watch": "sb-rn-watcher",
 		"build:web": "expo export:web"
 	},
 	"dependencies": {
