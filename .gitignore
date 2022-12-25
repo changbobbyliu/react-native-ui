@@ -75,6 +75,7 @@ lib/
 # Custom
 temporary
 /artifacts/*
+/example/web-build
 
 
 # global excludes

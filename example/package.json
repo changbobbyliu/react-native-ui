@@ -8,7 +8,8 @@
 		"ios": "expo start --ios",
 		"web": "expo start --web",
 		"sb:build": "sb-rn-get-stories",
-		"sb:watch": "sb-rn-watcher"
+		"sb:watch": "sb-rn-watcher",
+		"build:web": "expo export:web"
 	},
 	"dependencies": {
 		"@react-native-async-storage/async-storage": "~1.17.3",
