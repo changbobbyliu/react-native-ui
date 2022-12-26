@@ -1,14 +1,18 @@
 import {
 	getStorybookUI,
 	configure,
-	addDecorator,
 	addParameters,
 	addArgsEnhancer,
 	clearDecorators,
 } from "@storybook/react-native";
+import "./configs/decorators";
 
 export const StorybookRoot = getStorybookUI({});
 
 configure(() => {
-	return [require("./Button.stories"), require("./Counter.stories"), require("./Text.stories")];
+	return [
+		require("./stories/Button.stories"),
+		require("./stories/Counter.stories"),
+		require("./stories/Text.stories"),
+	];
 }, module);
