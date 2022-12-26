@@ -10,5 +10,5 @@ import {
 export const StorybookRoot = getStorybookUI({});
 
 configure(() => {
-	return [require("./Button.stories"), require("./Counter.stories")];
+	return [require("./Button.stories"), require("./Counter.stories"), require("./Text.stories")];
 }, module);
