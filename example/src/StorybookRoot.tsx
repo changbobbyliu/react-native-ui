@@ -1,11 +1,6 @@
-import {
-	getStorybookUI,
-	configure,
-	addParameters,
-	addArgsEnhancer,
-	clearDecorators,
-} from "@storybook/react-native";
+import { getStorybookUI, configure, addParameters, addArgsEnhancer } from "@storybook/react-native";
 import "./configs/decorators";
+import "./configs/addons";
 
 export const StorybookRoot = getStorybookUI({});
 

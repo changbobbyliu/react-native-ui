@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "react-native";
+import { action } from "@storybook/addon-actions";
 
 export default {
 	title: "React Native Button",
@@ -9,4 +10,4 @@ export default {
 	},
 };
 
-export const Basic = (args: any) => <Button {...args} />;
+export const Basic = (args: any) => <Button {...args} onPress={action("Basic pressed")} />;

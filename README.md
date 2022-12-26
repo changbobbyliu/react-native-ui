@@ -18,14 +18,30 @@ import { multiply } from "@boobareth/react-native-ui";
 const result = await multiply(3, 7);
 ```
 
-## Contributing
+# Storybook
 
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
+## addons
 
-## License
+### addon-actions
 
-MIT
+> Capture actions
 
----
+- Deps
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+```s
+@storybook/addon-actions
+@storybook/addon-ondevice-actions
+```
+
+- Setup
+
+```ts
+import "@storybook/addon-ondevice-actions/register";
+```
+
+- Use
+
+```ts
+import { action } from "@storybook/addon-actions";
+onPress={action("Basic pressed")}
+```
