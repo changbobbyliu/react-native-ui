@@ -13,6 +13,6 @@ const config: ComponentMeta<typeof Counter> = {
 	}
 };
 
-export const Basic = (args: any) => <Counter {...args} title="BABA" initialCount={20} />;
+export const Basic = (args: any) => <Counter {...args} />;
 
 export default config;
