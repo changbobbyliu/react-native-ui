@@ -45,3 +45,29 @@ import "@storybook/addon-ondevice-actions/register";
 import { action } from "@storybook/addon-actions";
 onPress={action("Basic pressed")}
 ```
+
+### addon-controls (prev. knobs)
+
+- Deps
+
+```
+@storybook/addon-controls
+@storybook/addon-ondevice-controls
+@react-native-community/datetimepicker
+@react-native-community/slider
+```
+
+- Setup
+
+```ts
+import "@storybook/addon-ondevice-controls/register";
+```
+
+- Use
+
+```ts
+// xx.stories.tsx
+export default {
+	args: { title: "Hello world??!" },
+};
+```
