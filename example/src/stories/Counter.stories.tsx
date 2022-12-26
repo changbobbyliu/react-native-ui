@@ -8,6 +8,9 @@ const config: ComponentMeta<typeof Counter> = {
 	args: {
 		title: "Hello world??!",
 	},
+	parameters: {
+		notes: "This is a simple counter component",
+	}
 };
 
 export const Basic = (args: any) => <Counter {...args} title="BABA" initialCount={20} />;
