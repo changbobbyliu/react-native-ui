@@ -33,7 +33,8 @@
 		"release": "release-it",
 		"example": "yarn --cwd example",
 		"bootstrap": "yarn example && yarn install",
-		"build": "npm pack --pack-destination artifacts"
+		"build": "npm pack --pack-destination artifacts",
+		"build:sb": "yarn --cwd example build-storybook"
 	},
 	"keywords": [
 		"react-native",

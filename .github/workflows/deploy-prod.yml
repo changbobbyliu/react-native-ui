@@ -1,0 +1,27 @@
+name: Deploy to production
+on:
+  push:
+    branches:
+      - "main"
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone to vm
+        uses: actions/checkout@v3
+      - name: Setup yarn
+        uses: mskelton/setup-yarn@v1
+        with:
+          node-version: "16.x"
+      - name: Build
+        run: |
+          yarn
+          yarn build:sb
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: web-build # The folder the action should deploy.
+
